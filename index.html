@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pricing Page</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="pricing-section">
+    <h1 class="pricing-title">Choose Your Plan</h1>
+
+    <div class="toggles">
+      <div class="toggle-container">
+        <span>Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="billing-toggle" aria-label="Toggle billing period">
+          <span class="slider"></span>
+        </label>
+        <span>Annually</span>
+      </div>
+
+      <div class="toggle-container">
+        <span>Light</span>
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="slider"></span>
+        </label>
+        <span>Dark</span>
+      </div>
+    </div>
+
+    <section class="pricing-cards">
+      <article class="card">
+        <h2 class="plan-title">Basic</h2>
+        <p class="price" data-monthly="19" data-annual="15">$19<span>/mo</span></p>
+        <ul class="features">
+          <li>✔ 10 Projects</li>
+          <li>✔ Basic Support</li>
+          <li>✔ 5GB Storage</li>
+        </ul>
+        <button class="btn">Choose Basic</button>
+      </article>
+
+      <article class="card featured">
+        <h2 class="plan-title">Pro</h2>
+        <p class="price" data-monthly="39" data-annual="29">$39<span>/mo</span></p>
+        <ul class="features">
+          <li>✔ Unlimited Projects</li>
+          <li>✔ Priority Support</li>
+          <li>✔ 50GB Storage</li>
+        </ul>
+        <button class="btn">Choose Pro</button>
+      </article>
+
+      <article class="card">
+        <h2 class="plan-title">Enterprise</h2>
+        <p class="price" data-monthly="79" data-annual="59">$79<span>/mo</span></p>
+        <ul class="features">
+          <li>✔ Custom Solutions</li>
+          <li>✔ Dedicated Support</li>
+          <li>✔ Unlimited Storage</li>
+        </ul>
+        <button class="btn">Contact Sales</button>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
